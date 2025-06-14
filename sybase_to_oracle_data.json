@@ -1,0 +1,1093 @@
+{
+    "source_url": "https://www.sqlines.com/sybase-to-oracle",
+    "page_title": "Sybase ASE to Oracle Migration",
+    "extracted_texts": [],
+    "extracted_tables": [
+        [
+            [
+                "",
+                "Sybase ASE",
+                "Oracle"
+            ],
+            [
+                "First character",
+                "Alphabetical and _ (underscore)",
+                "Alphabetical"
+            ],
+            [
+                "Subsequent characters",
+                "Alphanumeric, _ , #, @, $, ¥ (yen), and £",
+                "Alphanumeric, _ , # and $"
+            ]
+        ],
+        [
+            [
+                "",
+                "Sybase ASE",
+                "Oracle"
+            ],
+            [
+                "Tables, columns, indexes and constraints",
+                "255",
+                "30"
+            ],
+            [
+                "Views, procedures, triggers",
+                "255",
+                "30"
+            ],
+            [
+                "Databases",
+                "30",
+                "8"
+            ]
+        ],
+        [
+            [
+                "",
+                "Sybase ASE",
+                "Oracle"
+            ],
+            [
+                "Table constraint names",
+                "Unique within the table",
+                "Unique within the schema"
+            ]
+        ],
+        [
+            [
+                "",
+                "Sybase ASE",
+                "Oracle"
+            ],
+            [
+                "1",
+                "CHAR(n)",
+                "Fixed-length string",
+                "CHAR(n)"
+            ],
+            [
+                "2",
+                "NCHAR(n)",
+                "Fixed-length national character string",
+                "NCHAR(n)"
+            ],
+            [
+                "3",
+                "NVARCHAR(n)",
+                "Variable-length national character string",
+                "NVARCHAR2(n)"
+            ],
+            [
+                "4",
+                "TEXT",
+                "Variable-length character data, ⇐ 2GB",
+                "CLOB"
+            ],
+            [
+                "5",
+                "UNICHAR(n)",
+                "Fixed-length Unicode UTF-16 string",
+                "NCHAR(n)"
+            ],
+            [
+                "6",
+                "UNITEXT",
+                "Variable-length Unicode UTF-16 data, ⇐ 2GB (1B chars)",
+                "NCLOB"
+            ],
+            [
+                "7",
+                "UNIVARCHAR(n)",
+                "Variable-length Unicode UTF-16 string",
+                "NVARCHAR2(n)"
+            ],
+            [
+                "8",
+                "VARCHAR(n)",
+                "Variable-length string, n ⇐ 32K (since ASE 12.5)",
+                "VARCHAR2(n), n ⇐ 4000",
+                "CLOB"
+            ]
+        ],
+        [
+            [
+                "",
+                "Sybase ASE",
+                "Oracle"
+            ],
+            [
+                "1",
+                "BIGINT",
+                "64-bit integer",
+                "NUMBER(19)"
+            ],
+            [
+                "2",
+                "DECIMAL(p,s), DEC(p,s)",
+                "Fixed-point number",
+                "NUMBER(p,s)"
+            ],
+            [
+                "3",
+                "DOUBLE PRECISION",
+                "Double-precision floating-point number",
+                "BINARY_DOUBLE"
+            ],
+            [
+                "4",
+                "FLOAT(p)",
+                "Floating-point number",
+                "BINARY_DOUBLE"
+            ],
+            [
+                "5",
+                "INT, INTEGER",
+                "32-bit integer",
+                "NUMBER(10)"
+            ],
+            [
+                "6",
+                "MONEY",
+                "64-bit currency amount",
+                "NUMBER(15,4)"
+            ],
+            [
+                "7",
+                "NUMERIC(p,s)",
+                "Fixed-point number",
+                "NUMBER(p,s)"
+            ],
+            [
+                "8",
+                "REAL",
+                "Single-precision floating-point number",
+                "BINARY_FLOAT"
+            ],
+            [
+                "9",
+                "SMALLINT",
+                "16-bit integer",
+                "NUMBER(5)"
+            ],
+            [
+                "10",
+                "SMALLMONEY",
+                "32-bit currency amount",
+                "NUMBER(6,4)"
+            ],
+            [
+                "11",
+                "TINYINT",
+                "8-bit unsigned integer, 0 to 255",
+                "NUMBER(3)"
+            ],
+            [
+                "12",
+                "UNSIGNED BIGINT",
+                "64-bit unsigned integer",
+                "NUMBER(20)"
+            ],
+            [
+                "13",
+                "UNSIGNED INT",
+                "32-bit unsigned integer",
+                "NUMBER(10)"
+            ],
+            [
+                "14",
+                "UNSIGNED SMALLINT",
+                "16-bit unsigned integer",
+                "NUMBER(5)"
+            ]
+        ],
+        [
+            [
+                "",
+                "Sybase ASE",
+                "Oracle"
+            ],
+            [
+                "1",
+                "BIGDATETIME",
+                "Date and time with fraction",
+                "TIMESTAMP"
+            ],
+            [
+                "2",
+                "BIGTIME",
+                "Time (hour, minute, second and microseconds fraction)",
+                "TIMESTAMP"
+            ],
+            [
+                "3",
+                "DATE",
+                "Date (year, month and day)",
+                "DATE",
+                "Includes time part"
+            ],
+            [
+                "4",
+                "DATETIME",
+                "Date and time with fraction",
+                "TIMESTAMP"
+            ],
+            [
+                "5",
+                "SMALLDATETIME",
+                "Date and time (minute accuracy)",
+                "TIMESTAMP(0)"
+            ],
+            [
+                "6",
+                "TIME",
+                "Time (hour, minute, second and milliseconds fraction)",
+                "TIMESTAMP"
+            ]
+        ],
+        [
+            [
+                "",
+                "Sybase ASE",
+                "Oracle"
+            ],
+            [
+                "1",
+                "BINARY(n)",
+                "Fixed-length binary data,n⇐ 255, padded with 0x00",
+                "RAW(n)",
+                "n⇐ 2000, variable-length"
+            ],
+            [
+                "2",
+                "IMAGE",
+                "Variable-length binary data, ⇐ 2G",
+                "BLOB"
+            ],
+            [
+                "3",
+                "VARBINARY(n)",
+                "Variable-length binary data,n⇐ 255",
+                "RAW(n)",
+                "n⇐ 2000"
+            ]
+        ],
+        [
+            [
+                "",
+                "Sybase ASE",
+                "Oracle"
+            ],
+            [
+                "1",
+                "BIT",
+                "0 or 1; NULL is not allowed",
+                "CHAR(1)"
+            ]
+        ],
+        [
+            [
+                "",
+                "Sybase ASE",
+                "Oracle"
+            ],
+            [
+                "1",
+                "CONVERT(VARCHAR, datetime, style)",
+                "Convertdatetimeto string",
+                "TO_CHAR(datetime, format)"
+            ]
+        ],
+        [
+            [
+                "",
+                "Sybase ASE",
+                "Oracle"
+            ],
+            [
+                "1",
+                "CONVERT(DATETIME, expr, style)",
+                "Convertsexprto datetime",
+                "TO_TIMESTAMP(expr, format)"
+            ],
+            [
+                "2",
+                "DATENAME(unit, datetime)",
+                "Extract unit fromdatetime",
+                "TO_CHAR(datetime, format)"
+            ],
+            [
+                "3",
+                "DAY(datetime)",
+                "Get the day ofdatetime",
+                "EXTRACT(DAY FROM datetime)"
+            ]
+        ],
+        [
+            [
+                "",
+                "Sybase ASE",
+                "Oracle"
+            ],
+            [
+                "1",
+                "ABS(num)",
+                "Get the absolute value",
+                "ABS(num)"
+            ],
+            [
+                "2",
+                "ACOS(num)",
+                "Get the arc cosine",
+                "ACOS(num)"
+            ],
+            [
+                "3",
+                "ASCII(str)",
+                "GetASCIIcode of left-most char",
+                "ASCII(str)"
+            ],
+            [
+                "4",
+                "ASEHOSTNAME()",
+                "Get the workstation name",
+                "SYS_CONTEXT('USERENV', 'SERVER_HOST')"
+            ],
+            [
+                "5",
+                "ASIN(num)",
+                "Get the arc sine",
+                "ASIN(num)"
+            ],
+            [
+                "6",
+                "ATAN(num)",
+                "Get the arc tangent",
+                "ATAN(num)"
+            ],
+            [
+                "7",
+                "ATN2(x, y)",
+                "Get arctangent ofxandy",
+                "ATAN2(x, y)"
+            ],
+            [
+                "8",
+                "BIGINTTOHEX(exp)",
+                "Convert bigint to 8-byte hex",
+                "TO_CHAR(ABS(exp), 'XXXX')"
+            ],
+            [
+                "9",
+                "BINTOSTR(exp)",
+                "Convert hexadecimal to string",
+                ""
+            ],
+            [
+                "10",
+                "CEILING(num)",
+                "Get the smallest following integer",
+                "CEIL(num)"
+            ],
+            [
+                "11",
+                "CHAR(num)",
+                "Get character fromASCIIcode",
+                "CHR(num)"
+            ],
+            [
+                "12",
+                "CHAR_LENGTH(string)",
+                "Get length ofstringin characters",
+                "LENGTH(string)"
+            ],
+            [
+                "13",
+                "CHARINDEX(substr, str)",
+                "Get position ofsubstr",
+                "INSTR(str, substr)"
+            ],
+            [
+                "14",
+                "COALESCE(exp1, exp2, …)",
+                "Return first non-NULL expression",
+                "COALESCE(exp1, exp2, …)"
+            ],
+            [
+                "15",
+                "COL_LENGTH('table', 'col')",
+                "Get length of column",
+                "User-defined function"
+            ],
+            [
+                "16",
+                "COL_NAME(tbl_id, col_id)",
+                "Get name of column",
+                "User-defined function"
+            ],
+            [
+                "17",
+                "COMPARE(str, str2)",
+                "Compare two strings",
+                "User-defined function"
+            ],
+            [
+                "18",
+                "CONVERT(CHAR,exp)",
+                "Convert to string",
+                "TO_CHAR(exp)"
+            ],
+            [
+                "19",
+                "CONVERT(VARCHAR,exp)"
+            ],
+            [
+                "20",
+                "CONVERT(IMAGE,exp)",
+                "Convert to binary data",
+                "TO_BLOB(exp)"
+            ],
+            [
+                "21",
+                "CONVERT(TEXT,exp)",
+                "Convert to character data",
+                "TO_CLOB(exp)"
+            ],
+            [
+                "22",
+                "COS(num)",
+                "Get the cosine",
+                "COS(num)"
+            ],
+            [
+                "23",
+                "COT(num)",
+                "Get the cotangent",
+                "1 / TAN(num)"
+            ],
+            [
+                "24",
+                "CURRENT_BIGDATETIME()",
+                "Get the current date and time",
+                "CURRENT_TIMESTAMP"
+            ],
+            [
+                "25",
+                "CURRENT_BIGTIME()",
+                "Get the current time with fraction",
+                "CURRENT_TIMESTAMP"
+            ],
+            [
+                "26",
+                "CURRENT_DATE()",
+                "Get the current date",
+                "TRUNC(SYSDATE)"
+            ],
+            [
+                "27",
+                "CURRENT_TIME()",
+                "Get the current time",
+                "SYSTIMESTAMP"
+            ],
+            [
+                "28",
+                "DATALENGTH(exp)",
+                "Get length ofexpin bytes",
+                "LENGTHB(exp)"
+            ],
+            [
+                "29",
+                "DATEADD(unit, num, date)",
+                "Add an interval to datetime",
+                "INTERVAL expression"
+            ],
+            [
+                "30",
+                "DATEDIFF(MM,start, end)",
+                "Get MONTHS difference",
+                "MONTHS_BETWEEN(end, start)"
+            ],
+            [
+                "31",
+                "DATEDIFF(YY,start, end)",
+                "Get YEARS difference",
+                "MONTHS_BETWEEN(end, start) / 12"
+            ],
+            [
+                "32",
+                "DATEDIFF(DAY,start, end)",
+                "Get DAYS difference",
+                "end-start"
+            ],
+            [
+                "33",
+                "DATEDIFF(HH,start, end)",
+                "Get HOURS difference",
+                "(end-start) * 24"
+            ],
+            [
+                "34",
+                "DATEDIFF(MI,start, end)",
+                "Get MINUTES difference",
+                "(end-start) * 1440"
+            ],
+            [
+                "35",
+                "DATEDIFF(SS,start, end)",
+                "Get SECONDS difference",
+                "(end-start) * 86400"
+            ],
+            [
+                "37",
+                "DATEPART(datepart, date)",
+                "Getdatepartas an integer",
+                "TO_NUMBER(TO_CHAR(date, 'datepart'))"
+            ],
+            [
+                "38",
+                "DAY(datetime)",
+                "Extract day fromdatetime",
+                "EXTRACT(DAY FROMdatetime)"
+            ],
+            [
+                "39",
+                "DB_ID()",
+                "Get ID number of current database",
+                "SYS_CONTEXT('USERENV', 'CURRENT_SCHEMAID')"
+            ],
+            [
+                "40",
+                "DB_INSTANCEID()",
+                "Get ID number of instance",
+                "SYS_CONTEXT('USERENV', 'INSTANCE')"
+            ],
+            [
+                "41",
+                "DB_NAME()",
+                "Get the name of database",
+                "SYS_CONTEXT('USERENV', 'CURRENT_SCHEMA')"
+            ],
+            [
+                "42",
+                "DEGREES(num)",
+                "Convert radians to degrees",
+                "(num) * 180/3.1415926535"
+            ],
+            [
+                "43",
+                "EXP(n)",
+                "Raiseeto thenth power",
+                "EXP(n)"
+            ],
+            [
+                "44",
+                "FLOOR(num)",
+                "Get the largest preceding integer",
+                "FLOOR(num)"
+            ],
+            [
+                "45",
+                "GETDATE()",
+                "Get the current date and time",
+                "SYSTIMESTAMP"
+            ],
+            [
+                "46",
+                "GETUTCDATE()",
+                "Get the current UTC datetime",
+                "SYS_EXTRACT_UTC(SYSTIMESTAMP)"
+            ],
+            [
+                "47",
+                "HEXTOBIGINT(exp)",
+                "Convert hexadecimal to bigint",
+                "TO_NUMBER(exp, 'XXXX')"
+            ],
+            [
+                "48",
+                "HEXTOINT(exp)",
+                "Convert hexadecimal to integer",
+                "TO_NUMBER(exp, 'XXXX')"
+            ],
+            [
+                "49",
+                "HOST_ID()",
+                "Get the workstation ID",
+                ""
+            ],
+            [
+                "50",
+                "HOST_NAME()",
+                "Get the workstation name",
+                "SYS_CONTEXT('USERENV', 'SERVER_HOST')"
+            ],
+            [
+                "51",
+                "INDEX_COL(obj, id, key)",
+                "Get indexed column name",
+                ""
+            ],
+            [
+                "52",
+                "INDEX_COLORDER",
+                "Get column order",
+                "User-defined function"
+            ],
+            [
+                "53",
+                "INDEX_NAME",
+                "Get index name",
+                "User-defined function"
+            ],
+            [
+                "54",
+                "INSTANCE_ID()",
+                "Get ID number of instance",
+                "SYS_CONTEXT('USERENV', 'INSTANCE')"
+            ],
+            [
+                "55",
+                "INSTANCE_NAME()",
+                "Get name of instance",
+                "SYS_CONTEXT('USERENV', 'INSTANCE_NAME')"
+            ],
+            [
+                "56",
+                "INTTOHEX(integer)",
+                "Convert integer to hexadecimal",
+                "TO_CHAR(TO_CHAR(integer), 'XXXXXXXX')"
+            ],
+            [
+                "57",
+                "ISDATE(string)",
+                "Check for a valid datetime",
+                "User-defined function"
+            ],
+            [
+                "58",
+                "ISNULL(exp, replace)",
+                "Replace NULL",
+                "NVL(exp, replace)"
+            ],
+            [
+                "59",
+                "ISNUMERIC(string)",
+                "Check for a valid numeric",
+                "User-defined function"
+            ],
+            [
+                "60",
+                "IS_SINGLEUSERMODE()",
+                "Check for a single-user mode",
+                "User-defined function"
+            ],
+            [
+                "61",
+                "LEFT(string, n)",
+                "Getnleftmost characters",
+                "SUBSTR(string, 1,n)"
+            ],
+            [
+                "62",
+                "LEN(string)",
+                "Get length ofstringin characters",
+                "LENGTH(string)"
+            ],
+            [
+                "63",
+                "LOG(numeric)",
+                "Get natural logarithm",
+                "LN(numeric)"
+            ],
+            [
+                "64",
+                "LOG10(numeric)",
+                "Get base 10 logarithm",
+                "LOG(10,numeric)"
+            ],
+            [
+                "65",
+                "LOWER(string)",
+                "Lowercasestring",
+                "LOWER(string)"
+            ],
+            [
+                "66",
+                "LTRIM(string)",
+                "Remove leading spaces",
+                "LTRIM(string)"
+            ],
+            [
+                "67",
+                "MONTH(date)",
+                "Extract month fromdate",
+                "EXTRACT(MONTH FROMdate)"
+            ],
+            [
+                "68",
+                "NEWID([flag])",
+                "Generate GUIDs",
+                "SYS_GUID()"
+            ],
+            [
+                "69",
+                "NEXT_IDENTITY('table')",
+                "Get next identity value oftable",
+                ""
+            ],
+            [
+                "70",
+                "NULLIF(exp1, exp2)",
+                "Return NULL ifexp1=exp2",
+                "NULLIF(exp1, exp2)"
+            ],
+            [
+                "71",
+                "OBJECT_ID(name)",
+                "Get database object ID",
+                "User-defined function"
+            ],
+            [
+                "72",
+                "OBJECT_NAME(id[,db_id])",
+                "Get database object name",
+                "User-defined function"
+            ],
+            [
+                "73",
+                "OBJECT_OWNER_ID(id)",
+                "Get database object’s owner ID",
+                "User-defined function"
+            ],
+            [
+                "74",
+                "PARTITION_ID(table, ptn)",
+                "Get partition ID",
+                ""
+            ],
+            [
+                "75",
+                "PARTITION_NAME(indid, id)",
+                "Get partition name",
+                "User-defined function"
+            ],
+            [
+                "76",
+                "PARTITION_OBJECT_ID(id)",
+                "Get object ID for specified ptn ID",
+                ""
+            ],
+            [
+                "77",
+                "PASSWORD_RANDOM(len)",
+                "Get pseudorandom password",
+                "DBMS_RANDOM.STRING('P',len)"
+            ],
+            [
+                "78",
+                "PATINDEX(pattern, string)",
+                "Get starting position ofpattern",
+                "REGEXP_INSTR(string, pattern)"
+            ],
+            [
+                "79",
+                "PI()",
+                "Get number pi",
+                "3.1415926535897931"
+            ],
+            [
+                "80",
+                "POWER(value, n)",
+                "Raisevalueto thenth power",
+                "POWER(value, n)"
+            ],
+            [
+                "81",
+                "RADIANS(numeric)",
+                "Convert degrees to radians",
+                "(numeric) * 3.1415926535/180"
+            ],
+            [
+                "82",
+                "RAND([integer])",
+                "Get random float value in (0, 1)",
+                "DBMS_RANDOM.VALUE"
+            ],
+            [
+                "83",
+                "RAND2()",
+                "Var. RAND for each returned row",
+                "DBMS_RANDOM.VALUE"
+            ],
+            [
+                "84",
+                "REPLICATE(string, n)",
+                "Repeatstringntimes",
+                "RPAD(string, LENGTH(string) *n, string)"
+            ],
+            [
+                "85",
+                "RESERVE_IDENTITY(tbl, n)",
+                "Repeatstringntimes",
+                ""
+            ],
+            [
+                "86",
+                "REVERSE(string)",
+                "Get reversestring",
+                "REVERSE(string)"
+            ],
+            [
+                "87",
+                "RIGHT(string, n)",
+                "Getnrightmost characters",
+                "SUBSTR(string, -n)"
+            ],
+            [
+                "88",
+                "ROUND(num, integer)",
+                "Get rounded value",
+                "ROUND(num, integer)"
+            ],
+            [
+                "89",
+                "RTRIM(string)",
+                "Remove trailing spaces",
+                "RTRIM(string)"
+            ],
+            [
+                "90",
+                "SIGN(exp)",
+                "Get sign ofexp",
+                "SIGN(exp)"
+            ],
+            [
+                "91",
+                "SIN(num)",
+                "Get sine",
+                "SIN(num)"
+            ],
+            [
+                "92",
+                "SOUNDEX(string)",
+                "Get 4-character sound code",
+                "SOUNDEX(string)"
+            ],
+            [
+                "93",
+                "SPACE(integer)",
+                "Get string of spaces",
+                "RPAD(' ',integer)"
+            ],
+            [
+                "94",
+                "SPID_INSTANCE_ID(spid)",
+                "Get instance ID byspid",
+                ""
+            ],
+            [
+                "95",
+                "SQUARE(exp)",
+                "Get square",
+                "POWER(exp, 2)"
+            ],
+            [
+                "96",
+                "SQRT(num)",
+                "Get square root",
+                "SQRT(num)"
+            ],
+            [
+                "97",
+                "STR_REPLACE(s, sub, r)",
+                "Replacesubstring",
+                "REPLACE(s, sub, r)"
+            ],
+            [
+                "98",
+                "STRTOBIN(exp)",
+                "Convert string to hexadecimal",
+                ""
+            ],
+            [
+                "99",
+                "STUFF(exp, start, len, rep)",
+                "Replace characters in string",
+                "User-defined function"
+            ],
+            [
+                "100",
+                "SUBSTRING(exp, pos, len)",
+                "Get a substring ofexp",
+                "SUBSTR(exp, pos, len)"
+            ],
+            [
+                "101",
+                "SUSER_ID()",
+                "Get the server user’s ID",
+                "UID"
+            ],
+            [
+                "102",
+                "SUSER_NAME()",
+                "Get the server user’s name",
+                "SYS_CONTEXT('USERENV', 'OS_USER')"
+            ],
+            [
+                "103",
+                "TAN(num)",
+                "Get tangent",
+                "TAN(num)"
+            ],
+            [
+                "104",
+                "TEXTPTR(exp)",
+                "Get pointer that conform to LOB",
+                ""
+            ],
+            [
+                "105",
+                "TEXTVALID(exp, pointer)",
+                "Check validity of a pointer",
+                ""
+            ],
+            [
+                "106",
+                "TO_UNICHAR(int)",
+                "Convertintto Unicode character",
+                "TO_NCHAR(int)"
+            ],
+            [
+                "107",
+                "TSEQUAL(value1, value2)",
+                "Compare two timestamp values",
+                "value1=value2"
+            ],
+            [
+                "108",
+                "UHIGHSURR(exp, start)",
+                "Check for higher part of surrogate pair",
+                ""
+            ],
+            [
+                "109",
+                "ULOWSURR(exp, start)",
+                "Check for lower part of surrogate pair",
+                ""
+            ],
+            [
+                "110",
+                "UPPER(string)",
+                "Uppercasestring",
+                "UPPER(string)"
+            ],
+            [
+                "111",
+                "USCALAR(exp)",
+                "Get Unicode code ofexp",
+                ""
+            ],
+            [
+                "112",
+                "USER",
+                "Get the current user",
+                "USER"
+            ],
+            [
+                "113",
+                "USER_ID()",
+                "Get ID of the current user",
+                "UID"
+            ],
+            [
+                "114",
+                "USER_NAME()",
+                "Get name of the current user",
+                "SYS_CONTEXT('USERENV', 'OS_USER')"
+            ],
+            [
+                "115",
+                "XMLEXTRACT(xpath, exp)",
+                "ExtractXMLdata",
+                "EXTRACT(exp, xpath)"
+            ],
+            [
+                "116",
+                "XMLPARSE(exp)",
+                "ParseXMLdocument",
+                ""
+            ],
+            [
+                "117",
+                "XMLREPRESENTATION(exp)",
+                "Check forXMLcontent",
+                ""
+            ],
+            [
+                "118",
+                "XMLVALIDATE(exp)",
+                "GetXMLwith information",
+                "XMLISVALID(exp)"
+            ],
+            [
+                "119",
+                "YEAR(date)",
+                "Extract year fromdate",
+                "EXTRACT(YEAR FROMdate)"
+            ]
+        ],
+        [
+            [
+                "Sybase ASE",
+                "Oracle"
+            ],
+            [
+                "CREATE PROC[EDURE]",
+                "Create a stored procedure",
+                "CREATE [OR REPLACE] PROCEDURE"
+            ]
+        ],
+        [
+            [
+                "Sybase ASE",
+                "Oracle"
+            ],
+            [
+                "Optional statement delimiter",
+                "Adding ;"
+            ]
+        ],
+        [
+            [
+                "Sybase ASE",
+                "Oracle"
+            ],
+            [
+                "CREATE PROC",
+                "CREATE OR REPLACE PROCEDURE"
+            ],
+            [
+                "Procedure body without BEGIN END",
+                "Adding BEGIN END"
+            ],
+            [
+                "Returning result set using SELECT",
+                "Adding OPENcurFOR SELECT and OUT SYS_REFCURSOR parameter"
+            ],
+            [
+                "GO",
+                "Replacing with /"
+            ]
+        ],
+        [
+            [
+                "Sybase ASE",
+                "Oracle"
+            ],
+            [
+                "CREATE PROC",
+                "CREATE OR REPLACE PROCEDURE"
+            ]
+        ]
+    ]
+}
